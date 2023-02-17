@@ -21,11 +21,12 @@ public class Student {
 	public void studentInfo() {
 		
 		int sum = 0;
-		for (int i =0;i<subjectlist.size();i++) {
+//		for (int i =0;i<subjectlist.size();i++) {
+		for (Subject subject : subjectlist) {
 			String str = "학생" + studentName + "의";
-			str += subjectlist.get(i).getName() + " 과목 성적은";
-			str += subjectlist.get(i).getScore() + "점 입니다.";
-			sum += subjectlist.get(i).getScore();
+			str += subject.getName() + " 과목 성적은";
+			str += subject.getScore() + "점 입니다.";
+			sum += subject.getScore();
 			System.out.println(str);
 		}
 		System.out.println("학생" + studentName + "의 총점은 " + sum +"점 입니다.");
