@@ -11,9 +11,7 @@ public class VariableTest {
 //		int nn = (int) (n * 10);
 //		System.out.println(nn);
 		
-		int []arr = {};
-		arr[0] = 1;
-        
+
 	}
 
 }

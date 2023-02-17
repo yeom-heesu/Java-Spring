@@ -18,6 +18,10 @@ public class Student {
 		sub.take(1200);
 		this.std_money -= 1200;
 	}
+	public void takeTaxi(Taxi taxi) {
+		taxi.take(10000);
+		this.std_money = 10000;
+	}
 	public void stdInfo() {
 		System.out.println(std_name+"님의 남은돈은 " + std_money+"원 입니다.");
 	}
