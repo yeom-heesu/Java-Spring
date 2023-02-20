@@ -10,5 +10,7 @@ Spring framework
 브라우저 => (URL 호출) WAS (Tomcat 등으로 원격프로그램 실행)
 
 1) 프로그램 등록
+@Controller
 2) URL과 프로그램 (ex, main등 )연결 
+@RequestMapping
 3) 실행
