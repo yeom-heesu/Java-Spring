@@ -5,3 +5,10 @@ Spring framework
 - web browser : chrome
 - database : MySQL 5.7
 - 기타 : VS code, git, AWS, Maven
+
+1. 원격 프로그램 실행 과정
+브라우저 => (URL 호출) WAS (Tomcat 등으로 원격프로그램 실행)
+
+1) 프로그램 등록
+2) URL과 프로그램 (ex, main등 )연결 
+3) 실행
