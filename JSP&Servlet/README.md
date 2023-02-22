@@ -8,4 +8,10 @@
   -  (+ tomcat >  webapps > Root 의 경로에 txt파일을 저장하면 tomcat을 실행할때 localhost:8080/파일명 으로 접근이 가능)
   -  2) C:\9.0.71\webapps\ROOT\WEB-INF\classes 에 .class파일을 저장
   -  3) C:\9.0.71\webapps\ROOT\WEB-INF 의 web.mxl 파일에서 서블릿코드와 URL을 매핑
+          - 1) web.xml파일에서 매핑
+          - 2) annotation 이용 @webServlet
+            import java.io.*;
+            import javax.servlet.ServletException;
+            import javax.servlet.http.*;
+            import javax.servlet.annotation.WebServlet;
   -  (+ web.xml 파일이 변경되면 톰켓서버 재실행 필요) 
