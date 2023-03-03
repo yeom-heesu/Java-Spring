@@ -7,7 +7,11 @@ import java.util.Iterator;
 import java.util.Scanner;
 import java.util.Set;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+@Controller
 public class MethodCall {
+	@RequestMapping("/meme")
 	public static void main(String[] args) throws Exception{
 		HashMap map = new HashMap();
 		System.out.println("before:"+map);
