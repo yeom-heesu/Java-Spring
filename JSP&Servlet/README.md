@@ -15,3 +15,21 @@
             import javax.servlet.http.*;
             import javax.servlet.annotation.WebServlet;
   -  (+ web.xml 파일이 변경되면 톰켓서버 재실행 필요) 
+
+3. JSP와 Servlet
+  - 1. 서블릿과 컨트롤러 비교
+  @webServlet = @Controller + @RequestMapping
+  - 상속 extend HttpServlet     - 상속 X
+  - 클래스 단위별 매핑           - 매소드 단위별 매핑
+  - 2. 서블릿의 생명주기
+  - 1) 서블릿 초기화 init()
+  - 2) 서블릿 사용 service()
+  - 3) 서블릿 뒷정리 destroy()
+  - 3. JSP와 서블릿 비교
+  - JSP에서 <%~%>안에 자바코드를 사용
+  - src/main/webapp의 경로에 작성
+  - 4. JSP의 호출과정
+  - 이미지 첨부
+  - 5. JSP의 기본객체
+  - 생성이 없이 사용가능한 객체들 ) request, pageContext, session, out, page, config ...
+  
