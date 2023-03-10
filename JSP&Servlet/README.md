@@ -32,4 +32,23 @@
   - 이미지 첨부
   - 5. JSP의 기본객체
   - 생성이 없이 사용가능한 객체들 ) request, pageContext, session, out, page, config ...
-  
+  - 6.유효범위와 속성
+  - 1) pageContext lv저장 - 1개의 JSP 페이지
+  - 2) application webapp 전체에서 사용가능 - context전체
+  - 3) session 클라이언트 - 1+개 JSP 페이지
+  - 7. URL패턴
+  - @webServlet으로 서블릿을 URL에 매핑할때 사용
+  - 1) exact mapping - 완전히 일치하는 정확한 URL 매핑 ex) "/login/hello.do"
+  - 2) path mapping - 경로 URL 매핑       ex) "/login/*"
+  - 3) extension mapping - 확장자 URL매핑 ex) "*.do"
+  - 4) default mapping - 디폴트 URL매핑   ex) "/"
+  - 8. deploy 경로
+  - run configurations > Arguments deploy "c:~~~:"
+  - 9. JSTL (JSP Standaed Tag Library)
+  - <%=student%> => ${student}
+  - <%=if%> => <c:if>
+  - 10. EL (Expression Language)
+  - 표현언어
+  - 11. Filter _ 공통적인 요청 전처리와 응답 후처리에 사용 로깅,인코딩 등
+  - 여러개의 필터 사용후 서블릿 호출 가능
+  - 호출순서는 필터1 -> 필터2 -> 서블릿 (서블릿이 제일 마지막 호출)
