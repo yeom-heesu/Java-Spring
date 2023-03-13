@@ -52,3 +52,7 @@
   - 11. Filter _ 공통적인 요청 전처리와 응답 후처리에 사용 로깅,인코딩 등
   - 여러개의 필터 사용후 서블릿 호출 가능
   - 호출순서는 필터1 -> 필터2 -> 서블릿 (서블릿이 제일 마지막 호출)
+  
+  4. @RequestParam과 @ModelAttribute
+  - @RequestParam _ 요청의 파라미터를 연결할 매개변수에 붙이는 애너테이션
+  - cf) error 400 ) client / 500 ) server
